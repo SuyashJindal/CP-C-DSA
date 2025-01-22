@@ -32,7 +32,8 @@ void printVector(const vector<T>& vec) {
 
 int main() {
     FAST_IO  // Enables fast input and output
-
+   // std::ios::sync_with_stdio(false);
+	//std::cin.tie(nullptr), std::cout.tie(nullptr);
     int n;
     cin >> n;  // Input value
 
