@@ -4,6 +4,7 @@ vector<bool> sieve(int N) {
     isPrime[0] = isPrime[1] = false;
     for (int i = 2; i * i < N; ++i)    // i<N
         if (isPrime[i])
+            lp[i]=hp[i]= i;
             for (int j = i * i; j < N; j += i) // j = 2*i
                 isPrime[j] = false;
                 hp[j]=i;
