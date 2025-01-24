@@ -1,3 +1,4 @@
+vector<int>lp(N,0),hp(N,0);
 vector<bool> sieve(int N) {
     vector<bool> isPrime(N, true);
     isPrime[0] = isPrime[1] = false;
@@ -5,6 +6,9 @@ vector<bool> sieve(int N) {
         if (isPrime[i])
             for (int j = i * i; j < N; j += i) // j = 2*i
                 isPrime[j] = false;
+                hp[j]=i;
+                if(lp[j]==0)
+                    lp[j]=i;
     return isPrime;
 }
 // Time complexity is N*loglogn
