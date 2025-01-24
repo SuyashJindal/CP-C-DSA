@@ -27,5 +27,14 @@ int N = 1e6; // Change N as per the problem's limit
         else{
             cout<<"notPrime\n";
         }
-    }
+        map<int,int>prime_factors;
+        while (n>1){
+            int prime_factor = hp[n];
+            while(n  % primefactor==0){
+                n/=prime_factor;
+                prime_factors[prime_factor]++;
+            }
+            for( auto factor:prime_factors){
+cout<<factor.first<<" "<<factor.second<<endl;
 }
+        }
