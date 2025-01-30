@@ -28,3 +28,12 @@ bool search(Node* root, int x){
     }
     return false;
 }
+Node *insert(Node*root,int x){
+    if(root ==NULL)
+    return new Node(x);
+    else if (root->key<x)
+    root->right = insert(root->right,x);
+    else if (root->key>x)
+    root->left = insert(root->left,x);
+    return root;
+}
