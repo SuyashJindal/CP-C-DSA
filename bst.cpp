@@ -37,3 +37,22 @@ Node *insert(Node*root,int x){
     root->left = insert(root->left,x);
     return root;
 }
+Node*insert(Node*root, int x){
+    Node*temp  = new Node (x);
+    Node*parent = NULL,*curr = root;
+    
+    while(curr!=NULL){ 
+        parent = curr;
+        if(curr->key>x)
+        curr = curr->left;
+        else if(curr->key< x)
+        curr = curr->right;
+        else 
+        return root;
+    }
+    if(parent ==NULL) return temp;
+    if(parent->key<x)
+    parent->right = temp;
+    else parent->left =temp;
+    return root;
+}
