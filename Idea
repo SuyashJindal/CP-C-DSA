@@ -1,0 +1,24 @@
+𝗼𝗻-𝗦𝘁𝗮𝘁𝗶𝗼𝗻𝗮𝗿𝘆 𝗧𝗶𝗺𝗲 𝗦𝗲𝗿𝗶𝗲𝘀
+A non-stationary series has changing patterns over time.
+
+🔹 𝗞𝗲𝘆 𝗳𝗲𝗮𝘁𝘂𝗿𝗲𝘀:
+↳ Shocks or structural breaks
+↳ Mean & Variance are changing
+↳ Presence of trend & Seasonality
+
+🔹 𝗘𝘅𝗮𝗺𝗽𝗹𝗲𝘀:
+↳ Stock prices
+↳ Monthly revenue
+↳ Daily website traffic with weekly cycles
+
+Most of the time series in the business world are non-stationary.
+
+🔄 𝗛𝗼𝘄 𝘁𝗼 𝗰𝗼𝗻𝘃𝗲𝗿𝘁 𝗻𝗼𝗻-𝘀𝘁𝗮𝘁𝗶𝗼𝗻𝗮𝗿𝘆 → 𝘀𝘁𝗮𝘁𝗶𝗼𝗻𝗮𝗿𝘆
+✅ 𝗗𝗶𝗳𝗳𝗲𝗿𝗲𝗻𝗰𝗶𝗻𝗴
+Subtract the previous value. Removes trend.
+
+✅ 𝗗𝗲𝘀𝗲𝗮𝘀𝗼𝗻𝗮𝗹𝗶𝘇𝗶𝗻𝗴
+Estimate the seasonal component and subtract it.
+
+✅ 𝗟𝗼𝗴 / 𝗣𝗼𝘄𝗲𝗿 𝘁𝗿𝗮𝗻𝘀𝗳𝗼𝗿𝗺𝘀
+Use when variance increases with level.
