@@ -22,3 +22,50 @@ Estimate the seasonal component and subtract it.
 
 ✅ 𝗟𝗼𝗴 / 𝗣𝗼𝘄𝗲𝗿 𝘁𝗿𝗮𝗻𝘀𝗳𝗼𝗿𝗺𝘀
 Use when variance increases with level.
+///////////
+
+
+
+ Tree-Based Models (Better Generalization, Faster Prediction)
+LightGBM
+
+✅ Very fast & memory-efficient
+
+✅ Handles missing values natively
+
+✅ Excellent for tabular data like options IV
+
+🔧 Tune num_leaves, max_depth, learning_rate, n_estimators
+
+XGBoost
+
+Similar to LightGBM, more robust for small datasets
+
+Performs well with high variance targets like IVs
+
+CatBoost
+
+✅ Categorical handling without encoding
+
+✅ Robust with fewer hyperparameters
+
+Great for real-world noisy data
+
+🧠 Neural Networks (Nonlinear Patterns, Feature Interactions)
+MLPRegressor (from sklearn or PyTorch/TensorFlow)
+
+Flexible architecture for non-linear mapping
+
+Useful when you have many engineered features
+
+🔧 Needs proper scaling and regularization (dropout, L2)
+
+TabNet / FT-Transformer (advanced)
+
+Specifically designed for tabular data
+
+Good interpretability + accuracy
+
+More complex but useful if you have lots of strike, delta, or vega-based features
+
+
